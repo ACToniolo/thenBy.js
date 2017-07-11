@@ -30,7 +30,10 @@ var firstBy = (function() {
             // f is a unary function mapping a single item to its sort score
             var uf = f;
             var preprocess = opt.ignoreCase?ignoreCase:identity;
-            f = function(v1,v2) {return preprocess(uf(v1)) < preprocess(uf(v2)) ? -1 : preprocess(uf(v1)) > preprocess(uf(v2)) ? 1 : 0;}
+            // adding toLocaleString() and localeCompare() allows to compare strings with special characters with diacritical marks
+            // (including combining accents)             
+            f = function(v1,v2) {return preprocess(uf(v1)).toLocaleString().localeCompare(preprocess(uf(v2)).toLocaleString()) < 0 ? -1
+                                : preprocess(uf(v1)).toLocaleString().localeCompare(preprocess(uf(v2)).toLocaleString()) > 0 ? 1 : 0;}
         }
         if(opt.direction === -1) return function(v1,v2){return -f(v1,v2)};
         return f;
