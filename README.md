@@ -82,7 +82,7 @@ thenBy constructs a comparer function for you. It does this by combining the fun
 If you use thenBy to combine multiple compare functions into one (where each function expects two parameters), the difference is small. Using unary functions adds some overhead, using direction:-1 adds some, using only a property name adds a little, but will check for missing values, which could be optimized. Ignoring case will slow down, but not more so than when handcoded.   
 
 ### Install in your HTML
-To include it into your page/project, just paste the minified code from https://raw.github.com/Teun/thenBy.js/master/thenBy.min.js into yours (524 characters). If you don't want the `firstBy` function in your global namespace, you can assign it to a local variable (see sample.htm).
+To include it into your page/project, just paste the minified code from https://raw.github.com/ACToniolo/thenBy.js/master/thenBy.min.js into yours (627 characters). If you don't want the `firstBy` function in your global namespace, you can assign it to a local variable (see sample.htm).
 
 ### Install in node.js
 ```npm install thenby```
@@ -95,7 +95,7 @@ then in your app:
 ```bower install --save thenby```
 
 
-Thanks a lot to https://github.com/bergus, https://github.com/hagabaka, https://github.com/infolyzer and https://github.com/Foxhoundn for their improvements.
+Thanks a lot to https://github.com/teun, https://github.com/bergus, https://github.com/hagabaka, https://github.com/infolyzer and https://github.com/Foxhoundn for their improvements.
 
 
 [npm-image]: https://img.shields.io/npm/v/thenby.svg
