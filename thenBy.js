@@ -31,7 +31,7 @@ var firstBy = (function() {
             var uf = f;
             var preprocess = opt.ignoreCase?ignoreCase:identity;
             // adding toLocaleString() and localeCompare() allows to compare strings with special characters with diacritical marks
-            // (including combining accents)             
+            // (including combining accents)     ***  ACToniolo 2017  ***
             f = function(v1,v2) {return preprocess(uf(v1)).toLocaleString().localeCompare(preprocess(uf(v2)).toLocaleString()) < 0 ? -1
                                 : preprocess(uf(v1)).toLocaleString().localeCompare(preprocess(uf(v2)).toLocaleString()) > 0 ? 1 : 0;}
         }
