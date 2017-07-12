@@ -95,7 +95,7 @@ then in your app:
 ```bower install --save thenby```
 
 
-Thanks a lot to https://github.com/teun, https://github.com/bergus, https://github.com/hagabaka, https://github.com/infolyzer and https://github.com/Foxhoundn for their improvements.
+Thanks a lot to https://github.com/Teun, https://github.com/bergus, https://github.com/hagabaka, https://github.com/infolyzer and https://github.com/Foxhoundn for their improvements.
 
 
 [npm-image]: https://img.shields.io/npm/v/thenby.svg
